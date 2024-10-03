@@ -939,6 +939,10 @@ button {
   .how-content {
     /* padding-bottom: 50px; */
   }
+
+  .flex-center {
+    padding-block: 50px;
+  }
 }
 
 @media (min-width: 2200px) and (min-height: 1000px) {

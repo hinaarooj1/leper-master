@@ -379,14 +379,14 @@ const Home: NextPage = (props) => {
           <div className="abs-img">
             <img src="/new/polaroid.png" alt="" />
           </div>
-          <div className="flex-center section-width">
+          <div className="flex-center section-width"  >
             <div className="how-content">
               <h1 className="flex-text-h1">HOW IT WORKS</h1>
               <p className="flex-text-p"><span className="yellow-color">Step 1:</span> Download phantom from the App Store or install the browser extension. Visit our URL via your web browser or phantom mobile browser and connect wallet using button above.</p>
               <p className="flex-text-p"><span className="yellow-color">Step 3:</span> Once connected, click the “generate meme” button and save the image. You will need to spread this far and wide, be sure to submit all the links to the posts you have made.</p>
               <p className="flex-text-p"><span className="yellow-color">Step 4:</span> Once connected, you will be ale to share the links with us where you have mosted your memes</p>
               <p className="flex-text-p"><span className="yellow-color">Step 5:</span> Once you have submitted the links or your posts, it will be reviewed by the team. Once checked, you will be airdropped your Reward Tokens.</p>
-              <button className="get-btn">
+              <button className="get-btn hovering" style={{ width: "max-content" }}>
                 <img src="/new/get started.png" alt="" />
               </button>
             </div>
