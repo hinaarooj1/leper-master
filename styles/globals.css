@@ -716,9 +716,10 @@ button {
 .how-it-works {
   background-color: #00713a;
   background-image: url(/new/secbg.png);
-  min-height: 100vh;
+  min-height: calc(100vh - 100px);
+  padding-top: 100px;
   background-size: contain;
-  background-position: right;
+  background-position: center right;
   background-repeat: no-repeat;
 }
 
