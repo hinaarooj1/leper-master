@@ -3,7 +3,15 @@ import { NextPage } from "next";
 import { useWallet } from "@solana/wallet-adapter-react";
 import Image from "next/image";
 import Link from "next/link";
+import { WalletMultiButton } from "@solana/wallet-adapter-react-ui";
+
 import { useRouter } from "next/router";
+import dynamic from "next/dynamic";
+const WalletMultiButtonDynamic = dynamic(
+  async () =>
+    (await import("@solana/wallet-adapter-react-ui")).WalletMultiButton,
+  { ssr: false }
+);
 
 const Home: NextPage = (props) => {
   const wallet = useWallet();
@@ -59,14 +67,18 @@ const Home: NextPage = (props) => {
           <div className="buy-lepers">
             <ul className="social-lists">
               <li>
-                <a target="_blank" href="/" rel="noreferrer">
+                <a href="https://leper.wtf" rel="noreferrer">
                   <img alt="home" className="rotate-it homebtn" src="/new/home.png" />
                 </a>
               </li>
               <li>
-                <a target="_blank" href="https://twitter.com/lepercoin" rel="noreferrer">
-                  <img alt="connect" className="rotate-it" src="/new/connect.png" />
-                </a>
+                {/* <a   rel="noreferrer">
+                  <img    onClick={handleConnectClick}  alt="connect" className="rotate-it" src="/new/connect.png" />
+                </a> */}
+
+                <WalletMultiButtonDynamic
+                  style={{ backgroundColor: "#228b22", border: "none", cursor: "pointer", padding: "10px 20px", fontSize: "16px" }}
+                />
               </li>
             </ul>
           </div>

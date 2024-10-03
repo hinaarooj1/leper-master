@@ -618,7 +618,7 @@ button {
 }
 
 .social-lists li a img.homebtn {
-  width: 70px;
+  width: 67px;
 }
 
 .social-lists {
@@ -920,6 +920,10 @@ button {
   color: #ffad02;
 }
 
+.wallet-adapter-button {
+  font-family: TimKid !important
+}
+
 .static {
   display: flex;
   flex-direction: row;
@@ -1123,6 +1127,12 @@ button {
 }
 
 @media (max-width: 768px) {
+  .wallet-adapter-button {
+    height: 33px !important;
+    padding-block: 0 !important;
+    font-size: 13px !important;
+  }
+
   .inside-flex {
     padding-top: 25px !important;
   }
