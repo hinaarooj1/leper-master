@@ -198,36 +198,36 @@ button {
 }
 
 .home-intro-line:first-child .home-intro-line-row {
-  -webkit-animation: scrolling-1 1100s linear infinite;
-  animation: scrolling-1 1100s linear infinite;
+  -webkit-animation: scrolling-1 11000s linear infinite;
+  animation: scrolling-1 11000s linear infinite;
 }
 
 .home-intro-line:last-child .home-intro-line-row {
-  -webkit-animation: scrolling-2 1100s linear infinite;
-  animation: scrolling-2 1100s linear infinite;
+  -webkit-animation: scrolling-2 11000s linear infinite;
+  animation: scrolling-2 11000s linear infinite;
 }
 
 @-webkit-keyframes scrolling-1 {
   0% {
-    -webkit-transform: translateX(-27000.5px);
-    transform: translateX(-27000.5px);
+    -webkit-transform: translateX(-270000.5px);
+    transform: translateX(-270000.5px);
   }
 
   100% {
-    -webkit-transform: translateX(28781.5px);
-    transform: translateX(28781.5px);
+    -webkit-transform: translateX(287810.5px);
+    transform: translateX(287810.5px);
   }
 }
 
 @keyframes scrolling-1 {
   0% {
-    -webkit-transform: translateX(-27000.5px);
-    transform: translateX(-27000.5px);
+    -webkit-transform: translateX(-270000.5px);
+    transform: translateX(-270000.5px);
   }
 
   100% {
-    -webkit-transform: translateX(28781.5px);
-    transform: translateX(28781.5px);
+    -webkit-transform: translateX(287810.5px);
+    transform: translateX(287810.5px);
   }
 }
 
@@ -238,8 +238,8 @@ button {
   }
 
   100% {
-    -webkit-transform: translateX(-28781.5px);
-    transform: translateX(-28781.5px);
+    -webkit-transform: translateX(-287810.5px);
+    transform: translateX(-287810.5px);
   }
 }
 
@@ -250,8 +250,8 @@ button {
   }
 
   100% {
-    -webkit-transform: translateX(-28781.5px);
-    transform: translateX(-28781.5px);
+    -webkit-transform: translateX(-287810.5px);
+    transform: translateX(-287810.5px);
   }
 }
 
@@ -412,13 +412,13 @@ button {
 }
 
 .home-action-line:first-child .home-action-line-row {
-  -webkit-animation: scrolling-1 1100s linear infinite;
-  animation: scrolling-1 1100s linear infinite;
+  -webkit-animation: scrolling-1 11000s linear infinite;
+  animation: scrolling-1 11000s linear infinite;
 }
 
 .home-action-line:last-child .home-action-line-row {
-  -webkit-animation: scrolling-2 1100s linear infinite;
-  animation: scrolling-2 1100s linear infinite;
+  -webkit-animation: scrolling-2 11000s linear infinite;
+  animation: scrolling-2 11000s linear infinite;
 }
 
 .home-action-line-text {
