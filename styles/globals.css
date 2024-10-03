@@ -1106,7 +1106,7 @@ button {
 
   .larry-content h1 {
     font-size: 55px;
-    line-height: 60px;
+    line-height: normal;
   }
 
   .btnsas button img {
@@ -1139,7 +1139,7 @@ button {
   }
 
   .larry-content h1 {
-    font-size: 40px;
+    font-size: 35px;
     width: 100%;
     text-align: center;
     max-width: none;
@@ -1168,7 +1168,7 @@ button {
   }
 
   .btnsas button img {
-    width: 120px;
+    width: 100px;
   }
 
 
@@ -1221,6 +1221,10 @@ button {
 
   .flex-text-h1 {
     font-size: 40px;
+  }
+
+  .larry-gif img {
+    width: 280px;
   }
 }
 
