@@ -36,22 +36,22 @@ const Home: NextPage = (props) => {
         <div className="new-home min-height ">
           <ul className="social-list ">
             <li>
-              <a target="_blank" href="https://twitter.com/lepercoin" rel="noopener noreferrer">
+              <a target="_blank" href="https://twitter.com/lepercoin" rel="noreferrer">
                 <img alt="Twitter" className="rotate-it" src="/new/x.png" />
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://t.me/lepercoin" rel="noopener noreferrer">
+              <a target="_blank" href="https://t.me/lepercoin" rel="noreferrer">
                 <img alt="Telegram" className="rotate-it" src="/new/telegram.png" />
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://instagram.com/lepercoin" rel="noopener noreferrer">
+              <a target="_blank" href="https://instagram.com/lepercoin" rel="noreferrer">
                 <img alt="Instagram" className="rotate-it" src="/new/insta.png" />
               </a>
             </li>
             <li>
-              <a target="_blank" href="https://www.tiktok.com/@lepercoin" rel="noopener noreferrer">
+              <a target="_blank" href="https://www.tiktok.com/@lepercoin" rel="noreferrer">
                 <img alt="TikTok" className="rotate-it" src="/new/tiktok.png" />
               </a>
             </li>
@@ -59,12 +59,12 @@ const Home: NextPage = (props) => {
           <div className="buy-lepers">
             <ul className="social-lists">
               <li>
-                <a target="_blank" href="/" rel="noopener noreferrer">
+                <a target="_blank" href="/" rel="noreferrer">
                   <img alt="home" className="rotate-it homebtn" src="/new/home.png" />
                 </a>
               </li>
               <li>
-                <a target="_blank" href="https://twitter.com/lepercoin" rel="noopener noreferrer">
+                <a target="_blank" href="https://twitter.com/lepercoin" rel="noreferrer">
                   <img alt="connect" className="rotate-it" src="/new/connect.png" />
                 </a>
               </li>
@@ -667,10 +667,10 @@ const Home: NextPage = (props) => {
               <h1 className="flex-smoke-h1 ">CONNECT</h1>
               <p className="flex-smoke-p">JOIN THE LEPER LEGION, IT’S A WAY OF LIFE! </p>
               <ul className="social-list static">
-                <li><a target="_blank" href="https://twitter.com/lepercoin"><img className="rotate-it" src="/new/x.png" /></a></li>
-                <li><a target="_blank" href="https://t.me/lepercoin"><img className="rotate-it" src="/new/telegram.png" /></a></li>
-                <li><a target="_blank" href="https://instagram.com/lepercoin"><img className="rotate-it" src="/new/insta.png" /></a></li>
-                <li><a target="_blank" href="https://www.tiktok.com/@lepercoin"><img className="rotate-it" src="/new/tiktok.png" /></a></li>
+                <li><a target="_blank" rel="noreferrer" href="https://twitter.com/lepercoin"><img className="rotate-it" src="/new/x.png" /></a></li>
+                <li><a target="_blank" rel="noreferrer" href="https://t.me/lepercoin"><img className="rotate-it" src="/new/telegram.png" /></a></li>
+                <li><a target="_blank" rel="noreferrer" href="https://instagram.com/lepercoin"><img className="rotate-it" src="/new/insta.png" /></a></li>
+                <li><a target="_blank" rel="noreferrer" href="https://www.tiktok.com/@lepercoin"><img className="rotate-it" src="/new/tiktok.png" /></a></li>
               </ul>
             </div>
             <div className="bottom-dex">
@@ -685,7 +685,7 @@ const Home: NextPage = (props) => {
                 <div className="inside-li">
                   <h1 >OTHER LINKS</h1>
                   <ul className="other-lo">
-                    <li><a href="https://leper.gitbook.io/leper-docs" target="_blank" className="yellow-clr">WHITEPAPER</a></li>
+                    <li><a href="https://leper.gitbook.io/leper-docs" target="_blank" rel="noreferrer" className="yellow-clr">WHITEPAPER</a></li>
                     <li><a className="yellow-clr">DEXSCREENER</a></li>
                     <li><a className="yellow-clr">LINKTREE</a></li>
                   </ul>
