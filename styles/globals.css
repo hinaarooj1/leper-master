@@ -214,8 +214,8 @@ button {
   }
 
   100% {
-    -webkit-transform: translateX(287810.5px);
-    transform: translateX(287810.5px);
+    -webkit-transform: translateX(2878103.5px);
+    transform: translateX(2878103.5px);
   }
 }
 
@@ -226,8 +226,8 @@ button {
   }
 
   100% {
-    -webkit-transform: translateX(287810.5px);
-    transform: translateX(287810.5px);
+    -webkit-transform: translateX(2878103.5px);
+    transform: translateX(2878103.5px);
   }
 }
 
@@ -238,8 +238,8 @@ button {
   }
 
   100% {
-    -webkit-transform: translateX(-287810.5px);
-    transform: translateX(-287810.5px);
+    -webkit-transform: translateX(-2878103.5px);
+    transform: translateX(-2878103.5px);
   }
 }
 
@@ -250,8 +250,8 @@ button {
   }
 
   100% {
-    -webkit-transform: translateX(-287810.5px);
-    transform: translateX(-287810.5px);
+    -webkit-transform: translateX(-2878103.5px);
+    transform: translateX(-2878103.5px);
   }
 }
 
@@ -595,9 +595,98 @@ button {
   background-position: center;
 }
 
+.haich {
+  text-shadow: 4px 0 #000, -4px 0 #000, 0 4px #000, 0 -4px #000, 3px 3px #000, -3px -3px #000, 3px -3px #000, -3px 3px #000;
+
+  font-size: 19px;
+  text-transform: uppercase;
+}
+
+.input-copy textarea {
+  font-size: 13px;
+}
+
 .min-height {
 
   min-height: 100vh;
+}
+
+.min-height-res {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+
+}
+
+.upper-img {
+  padding-top: 10px;
+}
+
+.upper-img img {
+  width: 270px;
+}
+
+.masj {
+  border: 2px solid black;
+  border-radius: 10px;
+  margin-top: 5px;
+  width: 100%;
+}
+
+.btns-cjk button {
+  height: 40px;
+  width: 100%;
+}
+
+.btns-cjk button img {
+  width: 100%;
+}
+
+.red-btn {
+  background-color: #fb082d;
+
+  text-transform: uppercase;
+  border: 2px solid #000;
+  color: white;
+  height: 50px;
+}
+
+.yellow-btn {
+  background-color: #ffad02;
+
+  text-transform: uppercase;
+  border: 2px solid #000;
+  color: rgb(0, 0, 0);
+  height: 50px;
+}
+
+.btns-cjk {
+  width: 100%;
+  margin-top: 15px;
+  display: flex;
+  gap: 10px;
+  align-items: center;
+  justify-content: center;
+}
+
+.flex-bx {
+  display: flex;
+  align-items: stretch;
+  padding: 18px;
+  justify-content: space-between;
+  width: 100%;
+  max-width: 800px;
+  margin: auto;
+  margin-top: 30px;
+  background-color: #002d17;
+  border: 2px solid black;
+  border-radius: 10px;
+  min-height: 400px;
+}
+
+.flx-col {
+  width: 48%;
+
 }
 
 .social-list {
@@ -870,6 +959,13 @@ button {
   border-top: 2px solid black;
 }
 
+.meme-earn {
+  display: flex;
+  align-items: center;
+  padding-bottom: 30px;
+  flex-direction: column;
+  justify-content: center;
+}
 
 @media (min-width:2000px) {
   .inside-li {
@@ -936,6 +1032,54 @@ button {
   justify-content: start !important;
 }
 
+.input-copy {
+  margin-top: 5px;
+  min-height: 100px;
+}
+
+.mt-10 {
+  margin-top: 20px;
+}
+
+.input-copy textarea {
+  background-color: #00693a;
+  min-height: 100px;
+  border: 2px solid black;
+  border-radius: 10px;
+  text-align: center;
+  padding: 15px;
+  width: 100%;
+  outline: none;
+  height: 100%;
+  overflow: hidden;
+  resize: none;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+}
+
+.input-copy button img {
+  width: 43px;
+}
+
+.input-copy button {
+  position: absolute;
+  bottom: -13px;
+  right: -9px;
+
+}
+
+.input-copy.h1002,
+.input-copy.h1002 textarea {
+  height: 100% !important;
+}
+
+.flx-col {
+  display: flex;
+  flex-direction: column;
+}
+
 @media (min-width: 1100px) {
   .how-content {
     /* padding-bottom: 50px; */
@@ -943,6 +1087,87 @@ button {
 
   .flex-center {
     padding-block: 50px;
+  }
+}
+
+@media (min-width: 2300px) {
+  .flex-bx {
+    max-width: 1300px;
+  }
+
+  .haich {
+    font-size: 30px;
+
+  }
+
+  .input-copy textarea {
+    font-size: 21px;
+  }
+
+  .btns-cjk button {
+    height: 70px;
+
+    font-size: 22px;
+  }
+
+  .input-copy button img {
+    width: 50px;
+  }
+
+  .upper-img img {
+    width: 380px;
+  }
+}
+
+@media (min-width: 3100px) {
+  .flex-bx {
+    max-width: 1800px;
+  }
+
+  .input-copy,
+  .masj {
+    margin-top: 15px;
+  }
+
+  .flex-bx {
+    padding: 30px;
+  }
+
+  .upper-img img {
+    width: 450px;
+  }
+
+  .btns-cjk,
+  .mt-10 {
+    margin-top: 40px;
+  }
+
+  .input-copy {
+    min-height: 150px;
+  }
+
+  .input-copy button img {
+    width: 65px;
+  }
+
+  .input-copy button {
+    position: absolute;
+    bottom: -20px;
+    right: -9px;
+  }
+
+  .haich {
+    font-size: 45px;
+
+  }
+
+  .input-copy textarea {
+    font-size: 30px;
+  }
+
+  .btns-cjk button {
+    height: 90px;
+    font-size: 32px;
   }
 }
 
@@ -1089,7 +1314,9 @@ button {
 
 
 
-
+  .upper-img img {
+    width: 220px;
+  }
 
 
   .lepper-footer img {
@@ -1132,6 +1359,21 @@ button {
 }
 
 @media (max-width: 768px) {
+  .flex-bx {
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+  }
+
+  .flx-col:last-child {
+    margin-top: 30px;
+  }
+
+  .flx-col {
+    margin: auto;
+    width: 100%;
+  }
+
   .wallet-adapter-button {
     height: 33px !important;
     padding-block: 0 !important;
@@ -1241,6 +1483,21 @@ button {
   }
 }
 
+@media (max-width: 600px) {
+  .flex-bx {
+
+    width: 100%;
+  }
+
+  .btns-cjk button {
+    font-size: 13px;
+  }
+
+  .upper-img {
+    padding-top: 100px;
+  }
+}
+
 @media (max-width: 450px) {
   .footer-area .flex-smoke-h1 {
     font-size: 23px;
@@ -1252,6 +1509,18 @@ button {
 
   .larry-gif img {
     width: 280px;
+  }
+
+  .haich {
+    font-size: 17px;
+  }
+
+  .input-copy textarea {
+    font-size: 12px;
+  }
+
+  .upper-img img {
+    width: 200px;
   }
 }
 
@@ -1281,6 +1550,10 @@ button {
 
   .btnsas {
     margin-top: 20px;
+  }
+
+  .btns-cjk {
+    flex-direction: column;
   }
 
 }

@@ -26,45 +26,45 @@ export const Header: FC = () => {
   const wallet = useWallet();
   const walletAddress = wallet.publicKey?.toString();
   return (
-    // <div className="header">
-    //   <div className="header-wrapper">
-    //     <Link href="#top">
-    //       <Image
-    //         className="header-image"
-    //         alt="Lepe Logo"
-    //         src="/lepergold.png"
-    //         width={104}
-    //         height={28}
-    //       />
-    //     </Link>
-    //     <div className="grow"></div>
-    //     {walletAddress === "FZ8idPupqGtCCQ5t1YGgz1kE4WeVJpSZmJV25aEgZ9uP" ? (
-    //       <>
-    //         <button
-    //           type="button"
-    //           className="my-font bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-6"
-    //           onClick={gotoAdmin}
-    //         >
-    //           Admin Page
-    //         </button>
-    //         <button
-    //           type="button"
-    //           className="my-font bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-6"
-    //           onClick={gotoBack}
-    //         >
-    //           Back
-    //         </button>
-    //       </>
-    //     ) : (
-    //       <></>
-    //     )}
-
-    //     <WalletMultiButtonDynamic
-    //       style={{ backgroundColor: "#228b22", border: "none", cursor: "pointer", padding: "10px 20px", fontSize: "16px" }}
-    //     />
-    //   </div>
-    // </div>
     <>
+      {/* <div className="header">
+      <div className="header-wrapper">
+        <Link href="#top">
+          <Image
+            className="header-image"
+            alt="Lepe Logo"
+            src="/lepergold.png"
+            width={104}
+            height={28}
+          />
+        </Link>
+        <div className="grow"></div>
+        {walletAddress === "FZ8idPupqGtCCQ5t1YGgz1kE4WeVJpSZmJV25aEgZ9uP" ? (
+          <>
+            <button
+              type="button"
+              className="my-font bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-6"
+              onClick={gotoAdmin}
+            >
+              Admin Page
+            </button>
+            <button
+              type="button"
+              className="my-font bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-6"
+              onClick={gotoBack}
+            >
+              Back
+            </button>
+          </>
+        ) : (
+          <></>
+        )}
+
+        <WalletMultiButtonDynamic
+          style={{ backgroundColor: "#228b22", border: "none", cursor: "pointer", padding: "10px 20px", fontSize: "16px" }}
+        />
+      </div>
+    </div> */}
     </>
   );
 };
