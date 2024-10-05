@@ -1522,6 +1522,16 @@ button {
   .upper-img img {
     width: 200px;
   }
+
+  .input-copy button img {
+    width: 35px;
+  }
+
+  .input-copy button {
+    position: absolute;
+    bottom: -12px;
+    right: -7px;
+  }
 }
 
 @media (max-width: 390px) {
