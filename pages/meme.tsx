@@ -187,7 +187,7 @@ const Meme: NextPage = () => {
             </div>
             <h1 className="haich mt-10"><span className="yellow-color">#3</span> PASTE YOUR URLS BELOW</h1>
             <div className="input-copy relative h1002">
-              <textarea className="h1002" value={newLink}
+              <textarea className="h1002" style={{ textAlign: "left" }} value={newLink}
                 onChange={handleChangeLink}></textarea>
 
             </div>
