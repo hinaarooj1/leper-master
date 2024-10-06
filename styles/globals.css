@@ -1080,6 +1080,57 @@ button {
   flex-direction: column;
 }
 
+.haich.haich-yellow {
+  color: #ffad02;
+  margin: 0 !important;
+  font-size: 24px;
+}
+
+.choose-name input {
+
+  text-align: center;
+  background-color: #00995f;
+  padding: 18px 10px;
+  font-size: 20px;
+  outline: none;
+  transform: skew(-5deg);
+  border: 3px solid black;
+  margin-bottom: 10px;
+}
+
+.choose-name button {
+  background-color: #fb082d;
+  border: 3px solid black;
+  color: white;
+  text-transform: uppercase;
+  width: max-content;
+  padding: 5px 30px;
+
+  display: block;
+  margin: auto;
+
+}
+
+.choose-name {
+  display: flex;
+  gap: 10px;
+  max-width: 400px;
+  width: 100%;
+  text-align: center;
+  flex-direction: column;
+}
+
+.this-abs {
+  position: absolute;
+  top: 40px;
+  left: 0;
+  right: 0;
+
+  margin: auto;
+  display: flex;
+  justify-content: center;
+}
+
 @media (min-width: 1100px) {
   .how-content {
     /* padding-bottom: 50px; */
@@ -1093,6 +1144,25 @@ button {
 @media (min-width: 2300px) {
   .flex-bx {
     max-width: 1300px;
+  }
+
+  .haich.haich-yellow {
+    font-size: 33px;
+
+  }
+
+  .choose-name {
+    max-width: 600px;
+    gap: 15px;
+  }
+
+  .choose-name input {
+    font-size: 29px;
+  }
+
+  .choose-name button {
+    font-size: 25px;
+    padding: 10px 39px;
   }
 
   .haich {
@@ -1122,6 +1192,25 @@ button {
 @media (min-width: 3100px) {
   .flex-bx {
     max-width: 1800px;
+  }
+
+  .haich.haich-yellow {
+    font-size: 42px;
+
+  }
+
+  .choose-name {
+    max-width: 900px;
+    gap: 15px;
+  }
+
+  .choose-name input {
+    font-size: 40px;
+  }
+
+  .choose-name button {
+    font-size: 31px;
+    padding: 15px 40px;
   }
 
   .input-copy,
@@ -1495,6 +1584,19 @@ button {
 
   .upper-img {
     padding-top: 100px;
+  }
+
+  .choose-name input {
+    padding-block: 12px 8px;
+  }
+
+  .haich.haich-yellow {
+    font-size: 21px;
+  }
+
+  .choose-name button {
+    font-size:
+      16px
   }
 }
 

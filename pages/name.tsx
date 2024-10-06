@@ -5,7 +5,12 @@ import { useWallet } from "@solana/wallet-adapter-react";
 import { useContext } from "react";
 import { UserContext } from "../hooks/userProvider";
 import Spinner from "../components/Spinner";
-
+import dynamic from "next/dynamic";
+const WalletMultiButtonDynamic = dynamic(
+  async () =>
+    (await import("@solana/wallet-adapter-react-ui")).WalletMultiButton,
+  { ssr: false }
+);
 const Name: NextPage = () => {
   const router = useRouter();
   const [userName, setUserName] = useState("");
@@ -15,6 +20,7 @@ const Name: NextPage = () => {
   const walletAddress = wallet.publicKey?.toString();
 
   useEffect(() => {
+    console.log(wallet);
     (async () => {
       // Fetching user data
       try {
@@ -38,8 +44,8 @@ const Name: NextPage = () => {
           router.push("/meme");
         }
       } catch (error) {
-        setIsLoading(true);
-        alert("Error detected when fetching data");
+        setIsLoading(false);
+        // alert("Error detected when fetching data");
       }
     })();
   }, [walletAddress, router, setUser]);
@@ -79,27 +85,58 @@ const Name: NextPage = () => {
       {isLoading ? (
         <Spinner />
       ) : (
-        <div className="font-mono flex justify-center items-center h-screen flex-col gap-[20px] text-center">
-          <div className="my-font w-full max-w-[1000px] text-[30px]">
-            <div>Welcome to the Meme2Earn dashboard!! </div>
-            <div className="mt-[10px] mb-[10px]">
-              Please enter a username below!
+        <div className="new-home min-height-res ">
+          <ul className="social-list ">
+            <li>
+              <a target="_blank" href="https://twitter.com/lepercoin" rel="noreferrer">
+                <img alt="Twitter" className="rotate-it" src="/new/x.png" />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://t.me/lepercoin" rel="noreferrer">
+                <img alt="Telegram" className="rotate-it" src="/new/telegram.png" />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://instagram.com/lepercoin" rel="noreferrer">
+                <img alt="Instagram" className="rotate-it" src="/new/insta.png" />
+              </a>
+            </li>
+            <li>
+              <a target="_blank" href="https://www.tiktok.com/@lepercoin" rel="noreferrer">
+                <img alt="TikTok" className="rotate-it" src="/new/tiktok.png" />
+              </a>
+            </li>
+          </ul>
+          <div className="buy-lepers">
+            <ul className="social-lists">
+              <li>
+                <a href="https://leper.wtf" rel="noreferrer">
+                  <img alt="home" className="rotate-it homebtn" src="/new/home.png" />
+                </a>
+              </li>
+              <li>
+                {/* <a   rel="noreferrer">
+              <img    onClick={handleConnectClick}  alt="connect" className="rotate-it" src="/new/connect.png" />
+            </a> */}
+
+                <WalletMultiButtonDynamic
+                  style={{ backgroundColor: "#228b22", border: "none", cursor: "pointer", padding: "10px 20px", fontSize: "16px" }}
+                />
+              </li>
+            </ul>
+          </div>
+          <div className="meme-earn min-height-r section-width">
+            <div className="upper-img this-abs">
+              <img src="/new/meme2earn logo.png" alt="" />
+            </div>
+            <div className="choose-name">
+              <h1 className="haich haich-yellow">Choose a display name</h1>
+              <input value={userName}
+                onChange={handleChangeUserName} type="text" />
+              <button onClick={handleNext}>Confirm</button>
             </div>
           </div>
-          <input
-            className="my-font w-3/4 max-w-[500px] text-xl mr-6 py-4 px-4 bg-[#111827]"
-            type="text"
-            value={userName}
-            onChange={handleChangeUserName}
-            placeholder="Enter your user name"
-          />
-          <button
-            className="my-font w-3/4 max-w-[500px] bg-blue-500 hover:bg-blue-700 text-white font-bold py-2 px-4 rounded-full mr-6"
-            type="button"
-            onClick={handleNext}
-          >
-            Next
-          </button>
         </div>
       )}
     </>
