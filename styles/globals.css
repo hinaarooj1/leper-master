@@ -1448,6 +1448,12 @@ button {
 }
 
 @media (max-width: 768px) {
+  .this-abs {
+    position: static !important;
+    padding-top: 0 !important;
+    margin-bottom: 30px;
+  }
+
   .flex-bx {
     flex-direction: column;
     justify-content: center;
